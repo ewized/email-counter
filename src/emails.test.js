@@ -11,15 +11,15 @@ const emails = [
 
 describe('test emails', () => {
   test('should serilize', () => {
-    let s = serialize('test.email+spam@gmail.com');
-    console.log(s);
+    let s = serialize('test.email+spam@gmail.com')
+    console.log(s)
     if (s !== 'testemail@gmail.com') {
       throw 'not equal'
     }
   })
   test('should work', () => {
-    let unique = countEmails(emails);
-    console.log(unique);
+    let unique = countEmails(emails)
+    console.log(unique)
     if (unique !== 2) {
       throw 'not equal'
     }
