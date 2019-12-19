@@ -1,7 +1,7 @@
 // serialze the email remove . and anything after + but before @
 export const serialize = value => {
   if (value) {
-    let [ name, email ] = value.split('@');
+    let [ name, email ] = value.split('@')
     return `${name.replace(/(\.|\+(.)+)/g, '')}@${email}`
   }
   return ''
